@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Professional documents, research and recommendations by Beverly Felten." />
+    <meta name="description" content="Beverly Felten is an interdisciplinary sustainability professional based in Barcelona. Explore her profile, CV and research." />
     <meta name="theme-color" content="#536b58" />
     <link rel="canonical" href="https://beverlysolange.github.io/" />
     <link rel="stylesheet" href="styles.css" />
@@ -25,17 +25,34 @@
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Beverly Felten, home">BF</a>
       <nav aria-label="Primary navigation">
+        <a href="#profile">Profile</a>
         <a href="#documents">Documents</a>
         <a href="#connect">Connect</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Professional archive</p>
-        <h1 id="page-title">Research, experience<br />&amp; recommendations.</h1>
-        <p class="intro">A curated collection of documents by Beverly Felten, available to read directly in your browser.</p>
-        <a class="text-link" href="#documents">Explore the collection <span aria-hidden="true">↓</span></a>
+      <section class="hero" id="profile" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Interdisciplinary sustainability professional</p>
+          <h1 id="page-title">Beverly<br />Felten.</h1>
+          <p class="location">Barcelona, Spain <span aria-hidden="true">·</span> Available for meaningful work</p>
+          <p class="intro">I bring together communication, research and on-the-ground collaboration to help build fairer, more sustainable systems.</p>
+          <ul class="keywords" aria-label="Areas of focus">
+            <li>Sustainability</li>
+            <li>Cooperation</li>
+            <li>Communication</li>
+          </ul>
+          <a class="text-link" href="#documents">Explore my work <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="profile-portrait">
+          <div class="portrait-blob" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/beverly-felten-profile.jpg" alt="Portrait of Beverly Felten" />
+            <span class="portrait-placeholder" aria-hidden="true">BF</span>
+          </div>
+          <p class="portrait-caption">Based in<br /><em>Barcelona</em></p>
+        </div>
       </section>
 
       <section class="documents-section" id="documents" aria-labelledby="documents-title">
@@ -49,13 +66,19 @@
 
         <div class="document-layout">
           <div class="document-list" role="list" aria-label="Available documents">
-            <article class="document-card is-active" role="listitem" data-document="cv" data-file="documents/beverly-felten-cv.pdf" data-title="CV — Beverly Felten" data-description="Professional curriculum vitae · 1 page">
+            <article class="document-card is-active" role="listitem" data-document="cv" data-file="documents/beverly-felten-cv-de.pdf" data-title="CV — Beverly Felten" data-description="Curriculum vitae · German · 1 page">
               <p class="document-type">Professional profile</p>
               <h3>CV — Beverly Felten</h3>
-              <p>Professional curriculum vitae · 1 page</p>
+              <p id="cv-card-description">Curriculum vitae · German · 1 page</p>
+              <div class="cv-language-switcher" aria-label="CV language">
+                <span>CV language</span>
+                <button type="button" data-cv-language="en" disabled>English</button>
+                <button type="button" data-cv-language="de" aria-pressed="true">Deutsch</button>
+                <button type="button" data-cv-language="es" disabled>Español</button>
+              </div>
               <div class="card-actions">
                 <button class="preview-button" type="button">Preview <span aria-hidden="true">↗</span></button>
-                <a href="documents/beverly-felten-cv.pdf" target="_blank" rel="noopener">Open PDF <span class="sr-only">(opens in a new tab)</span></a>
+                <a id="cv-card-open-link" href="documents/beverly-felten-cv-de.pdf" target="_blank" rel="noopener">Open PDF <span class="sr-only">(opens in a new tab)</span></a>
               </div>
             </article>
 
@@ -97,10 +120,10 @@
                 <h2 id="viewer-title">CV — Beverly Felten</h2>
                 <p id="viewer-description">Professional curriculum vitae · 1 page</p>
               </div>
-              <a id="viewer-open-link" href="documents/beverly-felten-cv.pdf" target="_blank" rel="noopener">Open PDF <span class="sr-only">(opens in a new tab)</span></a>
+              <a id="viewer-open-link" href="documents/beverly-felten-cv-de.pdf" target="_blank" rel="noopener">Open PDF <span class="sr-only">(opens in a new tab)</span></a>
             </div>
-            <iframe id="pdf-viewer" title="CV — Beverly Felten PDF preview" src="documents/beverly-felten-cv.pdf#view=FitH" loading="lazy"></iframe>
-            <p class="viewer-note">PDF not loading? <a id="viewer-fallback-link" href="documents/beverly-felten-cv.pdf" target="_blank" rel="noopener">Open it in a new tab.</a></p>
+            <iframe id="pdf-viewer" title="CV — Beverly Felten PDF preview" src="documents/beverly-felten-cv-de.pdf#view=FitH" loading="lazy"></iframe>
+            <p class="viewer-note">PDF not loading? <a id="viewer-fallback-link" href="documents/beverly-felten-cv-de.pdf" target="_blank" rel="noopener">Open it in a new tab.</a></p>
           </aside>
         </div>
       </section>
