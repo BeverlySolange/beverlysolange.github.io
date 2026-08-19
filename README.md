@@ -20,9 +20,10 @@ with an anchor such as `<a href="tel:+49123456789">+49 123 456 789</a>`.
 
 ## Adding the profile photo
 
-Add a portrait at `assets/beverly-felten-profile.jpg`. It will automatically
-appear in the landing-page portrait frame. Until then, the page shows a subtle
-BF placeholder.
+Add a portrait at `assets/beverly-felten-profile.png` or
+`assets/beverly-felten-profile.jpg`. PNG is preferred when the portrait needs
+an opaque background. It will automatically appear in the landing-page portrait
+frame. Until then, the page shows a subtle BF placeholder.
 
 ## CV language selection
 

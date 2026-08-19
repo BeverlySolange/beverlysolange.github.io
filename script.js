@@ -81,7 +81,7 @@ const requestedDocument = new URLSearchParams(location.hash.slice(1)).get('docum
 const requestedCard = cards.find((card) => card.dataset.document === requestedDocument);
 if (requestedCard && requestedCard !== cvCard) selectDocument(requestedCard, false);
 
-document.querySelector('.portrait-frame img').addEventListener('error', (event) => event.currentTarget.remove());
+document.querySelector('.portrait-frame img').addEventListener('error', (event) => event.currentTarget.closest('picture, img').remove());
 initialiseCvLanguages();
 
 document.querySelector('#year').textContent = new Date().getFullYear();
