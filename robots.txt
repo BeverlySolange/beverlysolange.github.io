@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beverlysolange.github.io/sitemap.xml
